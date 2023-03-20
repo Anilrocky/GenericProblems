@@ -17,5 +17,14 @@ namespace GenericProblems
             else
                 Console.WriteLine("c is maximum");
         }
+        public void FindMaxFloatNumber(double a, double b, double c)
+        {
+            if (a > b && a > c)
+                Console.WriteLine("a is maximum");
+            if (b > a && b > c)
+                Console.WriteLine("b is maximum");
+            else
+                Console.WriteLine("c is maximum");
+        }
     }
 }

@@ -7,6 +7,7 @@ namespace GenericProblems
         {
             MaximumOfThree maximum = new MaximumOfThree();
             maximum.FindMaxIntNumber(10, 30, 15);
+            maximum.FindMaxFloatNumber(1.6, 3.9, 6.5);
         }
     }
 }
