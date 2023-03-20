@@ -5,7 +5,8 @@ namespace GenericProblems
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Generic problem");
+            MaximumOfThree maximum = new MaximumOfThree();
+            maximum.FindMaxIntNumber(10, 30, 15);
         }
     }
 }
