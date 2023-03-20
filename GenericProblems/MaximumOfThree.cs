@@ -26,5 +26,14 @@ namespace GenericProblems
             else
                 Console.WriteLine("c is maximum");
         }
+        public void FindMaxOfString(string a, string b, string c)
+        {
+            if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0)
+                Console.WriteLine("a is maximum");
+            if (b.CompareTo(a) > 0 && b.CompareTo(c) > 0)
+                Console.WriteLine("b is maximum");
+            else
+                Console.WriteLine("c is maximum");
+        }
     }
 }
