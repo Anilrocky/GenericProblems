@@ -6,9 +6,9 @@ namespace GenericProblems
         static void Main(string[] args)
         {
             MaximumOfThree maximum = new MaximumOfThree();
-            maximum.FindMaxIntNumber(10, 30, 15);
-            maximum.FindMaxFloatNumber(1.6, 3.9, 6.5);
-            maximum.FindMaxOfString("Apple", "Banana", "Mango");
+            maximum.FindMax<int>(14, 56, 67);
+            maximum.FindMax<double>(13.8, 1.5, 12.6);
+            maximum.FindMax<string>("Apple", "Peach", "Banana");
         }
     }
 }

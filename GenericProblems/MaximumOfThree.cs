@@ -8,32 +8,14 @@ namespace GenericProblems
 {
     public class MaximumOfThree
     {
-        public void FindMaxIntNumber(int a,int b,int c)
-        {           
-            if (a > b && a > c)
-                Console.WriteLine("a is maximum");
-            if (b > a && b > c)
-                Console.WriteLine("b is maximum");
-            else
-                Console.WriteLine("c is maximum");
-        }
-        public void FindMaxFloatNumber(double a, double b, double c)
-        {
-            if (a > b && a > c)
-                Console.WriteLine("a is maximum");
-            if (b > a && b > c)
-                Console.WriteLine("b is maximum");
-            else
-                Console.WriteLine("c is maximum");
-        }
-        public void FindMaxOfString(string a, string b, string c)
+        public void FindMax<T>(T a,T b,T c) where T : IComparable
         {
             if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0)
                 Console.WriteLine("a is maximum");
             if (b.CompareTo(a) > 0 && b.CompareTo(c) > 0)
                 Console.WriteLine("b is maximum");
-            else
+            if (c.CompareTo(a) > 0 && c.CompareTo(b) > 0)
                 Console.WriteLine("c is maximum");
-        }
+        }     
     }
 }
